@@ -7,7 +7,9 @@ const form = document.querySelector(".feedback-form");
 const localStorageKey = "feedback-form-state";
 
 form.addEventListener("input", (evt) => {
-  localStorage.setItem(localStorageKey, evt.target.value);
+//   localStorage.setItem(localStorageKey, evt.target.value);
+formData[evt.target.name] = evt.target.value.trim();
+  localStorage.setItem(localStorageKey, JSON.stringify(formData));
 });
 
 form.addEventListener("submit", (evt) => {
