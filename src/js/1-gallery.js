@@ -80,4 +80,3 @@ const images = [
     .join('');
 gallery.insertAdjacentHTML("beforeend", items);
 
-console.log('SimpleLightbox')
