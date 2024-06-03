@@ -80,3 +80,4 @@ const images = [
     .join('');
 gallery.insertAdjacentHTML("beforeend", items);
 
+new SimpleLightbox('.gallery a', { captionsData: 'alt', captionDelay: 250});
