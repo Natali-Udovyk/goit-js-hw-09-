@@ -20,4 +20,5 @@ form.addEventListener("submit", (evt) => {
   localStorage.removeItem(localStorageKey);
   form.reset();
 });
+localStorage.setItem("formData", JSON.stringify(formData));
 console.log(formData);
